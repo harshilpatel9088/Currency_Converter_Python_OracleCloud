@@ -92,4 +92,4 @@ The following code snippet demonstrates the **ExchangeRateForecast** class, whic
 All the methods from the classes are called in the **views.py** file, where the values are processed and stored in a dictionary. This dictionary is then passed to the HTML templates, rendering dynamic content on the website. The integration between the backend logic and frontend display is achieved by leveraging Django's templating system, ensuring a seamless user experience.
 
 ![Code Snippet](views_part_1.png)
-![Code Snippet](views_part_1.png)
+![Code Snippet](views_part_2.png)
