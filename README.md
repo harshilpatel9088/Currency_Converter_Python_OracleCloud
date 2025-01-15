@@ -100,5 +100,5 @@ The final outcome of this project is a fully interactive currency converter dash
 
 This interactive currency converter dashboard can be accessed online. Click the link below to view the live version:
 
-[View the Dashboard](HarshilsCloud.com)
+[View the Dashboard]((https://HarshilsCloud.com/))
 
