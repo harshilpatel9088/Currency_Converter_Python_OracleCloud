@@ -93,3 +93,8 @@ All the methods from the classes are called in the **views.py** file, where the 
 
 ![Code Snippet](views_part_1.png)
 ![Code Snippet](views_part_2.png)
+
+The final outcome of this project is a fully interactive currency converter dashboard that allows users to view historical trends and forecast future exchange rates. Below is a snippet of the dashboard, demonstrating the user interface and key features of the application.
+
+![Dashboard Snippet](final_outcome.png)
+
