@@ -67,24 +67,24 @@ The code is written following Object-Oriented Programming (OOP) principles, with
 
 The following code snippet demonstrates the functionality of the **ExchangeRateAPI** class, which handles API calls and caching of exchange rate data. It builds a URL for fetching historical exchange rates for the past 365 days and uses the **requests** library to make the API call. The code ensures that the API is only called when necessary, adhering to rate limits by utilizing cached data. This class also includes methods to define the date range for the API request and format the data for retrieval.
 
-![Code Snippet](code_paer_1.png)
+![Code Snippet](code_part_1.png)
 
 The following code snippet showcases the functionality for caching exchange rate data and transforming the raw JSON response into a structured format. The **`get_cached_data`** method ensures that redundant API calls are avoided by checking if the data is up-to-date. If the data is outdated or missing, it fetches and transforms new data. The **`transform_data`** method processes the raw API response into a Pandas DataFrame, reshaping and renaming columns for easier analysis.
 
-![Code Snippet](code_paer_2.png)
+![Code Snippet](code_part_2.png)
 
 The following code snippet represents the **CurrencyConverter** class, which handles currency conversions. The **`convert`** method takes the source amount and currencies (source and destination) as input, validates the data, and performs the conversion using the latest exchange rates from the **ExchangeRateAPI** class. It retrieves the most recent exchange rates, checks for valid selections, and computes the converted amount by applying the appropriate rates. The result is returned rounded to two decimal places.
 
-![Code Snippet](code_paer_3.png)
+![Code Snippet](code_part_3.png)
 
 The following code snippet demonstrates the functionality of the **ExchangeRateAnalysis** class, which handles the analysis and processing of exchange rate data. The **`ETL_process`** method performs data cleaning (ETL), including converting date columns to datetime, handling numeric errors, and removing rows with missing data. The **`change_rate`** method calculates the percentage change in exchange rates from the previous day for each currency. It processes the cleaned data, calculates the rate changes, and identifies the top-performing currencies with the highest change rates.
 
-![Code Snippet](code_paer_4.png)
+![Code Snippet](code_part_4.png)
 
 The following code snippet showcases the **ExchangeRateChart** class, which is responsible for creating exchange rate trend charts for selected currencies. The **`show_chart`** method filters and processes the data for the source and destination currencies, merges them on the "Date" column, and calculates the final exchange rate for plotting. The method uses **Plotly** to generate a line chart displaying the exchange rate trends for both currencies, with the chart's layout dynamically updated to reflect the selected destination currency.
 
-![Code Snippet](code_paer_5.png)
+![Code Snippet](code_part_5.png)
 
 The following code snippet demonstrates the **ExchangeRateForecast** class, which uses the **Prophet** model for forecasting the exchange rate trends of selected currencies over the next 30 days. The **`forecast`** method takes the source and destination currencies, prepares the data, and fits the Prophet model. It then generates a forecast for the next 30 days and visualizes the trends using **Plotly**. The output includes both the forecasted data and a line chart showing the predicted exchange rate trends.
 
-![Code Snippet](code_paer_6.png)
+![Code Snippet](code_part_6.png)
