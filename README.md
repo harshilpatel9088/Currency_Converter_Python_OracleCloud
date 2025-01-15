@@ -98,3 +98,7 @@ The final outcome of this project is a fully interactive currency converter dash
 
 ![Dashboard Snippet](final_outcome.png)
 
+This interactive currency converter dashboard can be accessed online. Click the link below to view the live version:
+
+[View the Dashboard](HarshilsCloud.com)
+
