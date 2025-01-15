@@ -88,3 +88,8 @@ The following code snippet showcases the **ExchangeRateChart** class, which is r
 The following code snippet demonstrates the **ExchangeRateForecast** class, which uses the **Prophet** model for forecasting the exchange rate trends of selected currencies over the next 30 days. The **`forecast`** method takes the source and destination currencies, prepares the data, and fits the Prophet model. It then generates a forecast for the next 30 days and visualizes the trends using **Plotly**. The output includes both the forecasted data and a line chart showing the predicted exchange rate trends.
 
 ![Code Snippet](code_part_6.png)
+
+All the methods from the classes are called in the **views.py** file, where the values are processed and stored in a dictionary. This dictionary is then passed to the HTML templates, rendering dynamic content on the website. The integration between the backend logic and frontend display is achieved by leveraging Django's templating system, ensuring a seamless user experience.
+
+![Code Snippet](views_part_1.png)
+![Code Snippet](views_part_1.png)
